@@ -19,7 +19,7 @@ Le projet est une application web statique (HTML, CSS, JavaScript) simple et per
 ├── style.css           (Feuille de style CSS complète)
 ├── script.js           (Logique JavaScript pour le Quiz et le Moteur de Recherche)
 └── logo/
-    └── votre-logo.webm (Logo animé de l'en-tête - format WebM)
+    └── votre-logo.mp4(Logo animé de l'en-tête - format WebM)
 
 
 ------------------------------------------------------
