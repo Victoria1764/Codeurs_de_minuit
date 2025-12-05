@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche - Catalogue des Solutions Libres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+	<div class="video-logo-container">
+				<video autoplay muted loop playsinline preload="auto" id="videoLogo">
+            <source src="logo/votre-logo.webm" type="video/webm">
+            </video>
+			</div>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="contenu.html">Contenu</a></li>
+                <li><a href="jeux.html">Jeux</a></li>
+                <li><a href="recherche.html" class="active">Recherche</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Catalogue des Solutions Libres 🗺️</h1>
+        <p>Utilisez notre moteur de recherche pour trouver l'outil ou la ressource Open Source idéale en fonction des principes de la NIRD (Numérique Inclusif, Responsable, Durable).</p>
+
+        <section class="recherche-form">
+            <input type="text" id="searchInput" placeholder="Rechercher par mot-clé (ex: LibreOffice, éco-conception, GPL...)" aria-label="Champ de recherche">
+        </section>
+
+        <section class="filtres">
+            <h2>Filtres Rapides par Thème NIRD</h2>
+            <div class="filtres-boutons">
+                <button data-filtre="inclusif">Numérique Inclusif</button>
+                <button data-filtre="responsable">Numérique Responsable</button>
+                <button data-filtre="durable">Numérique Durable (Éco-Conception)</button>
+                <button data-filtre="licence">Licences & Code</button>
+            </div>
+        </section>
+
+        <section class="resultats-annuaire">
+            <h2>Annuaire des Ressources Libres</h2>
+            
+            <ul id="ressourcesList">
+                <li data-themes="bureautique inclusif mit">
+                    <h3>LibreOffice (Suite Bureautique)</h3>
+                    <p>Alternative 100% libre et gratuite à Microsoft Office. **Inclusif** (gratuit pour tous). <a href="https://www.libreoffice.org" target="_blank">Lien vers le projet</a></p>
+                </li>
+                <li data-themes="systeme durable eco-conception gpl">
+                    <h3>Linux (Système d'exploitation)</h3>
+                    <p>Système d'exploitation léger qui lutte contre l'obsolescence et prolonge la vie du matériel. **Durable**. <a href="https://www.ubuntu-fr.org" target="_blank">Lien vers le projet</a></p>
+                </li>
+                <li data-themes="cloud responsable donnees agpl">
+                    <h3>Nextcloud (Cloud Personnel)</h3>
+                    <p>Solution pour héberger vos propres données (Self-Hosting) et garantir la souveraineté. **Responsable**. <a href="https://nextcloud.com" target="_blank">Lien vers le projet</a></p>
+                </li>
+                <li data-themes="communication responsable jitsi">
+                    <h3>Jitsi Meet (Visioconférence)</h3>
+                    <p>Visioconférence sans compte et sans collecte de données. **Responsable**. <a href="https://jitsi.org" target="_blank">Lien vers le projet</a></p>
+                </li>
+                <li data-themes="graphisme inclusif gpl">
+                    <h3>GIMP et Inkscape</h3>
+                    <p>Outils libres professionnels pour la retouche d'image (GIMP) et le dessin vectoriel (Inkscape). **Inclusif**. <a href="https://www.gimp.org" target="_blank">Lien GIMP</a></p>
+                </li>
+                <li data-themes="association inclusif responsable">
+                    <h3>Framasoft</h3>
+                    <p>Association proposant un annuaire de services libres alternatifs aux GAFAM. **Inclusif** et **Responsable**. <a href="https://framasoft.org" target="_blank">Lien Framasoft</a></p>
+                </li>
+                <li data-themes="licence gpl code durable">
+                    <h3>Licence GPL (Copyleft)</h3>
+                    <p>Licence garantissant que les améliorations du code restent libres, principe clé de la durabilité logicielle. **Licence & Code**. <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">En savoir plus</a></p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 - Village Numérique Résistant. Projet Open Source (Licence MIT/GPL).
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>

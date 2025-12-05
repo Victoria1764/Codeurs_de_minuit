@@ -1,0 +1,317 @@
+/*
+======================================================
+STYLE.CSS (COMPLET ET FINAL - ESPACEMENT ULTRA-MAXIMAL ET ISOLÉ + LOGO VIDÉO)
+======================================================
+*/
+
+/* ----- 1. GLOBAL & BASE (Minimal pour ne pas impacter les autres pages) ----- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; 
+    color: #333;
+    line-height: 1.6; 
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto; 
+}
+
+/* COULEUR PRINCIPALE (Vert NIRD) */
+h1, h2 {
+    color: #147b4d; 
+    margin-top: 1em; 
+    margin-bottom: 0.5em; 
+}
+
+/* ----- 2. NAVIGATION & HEADER ----- */
+header {
+    background-color: #111f1a; 
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* * NOUVEAU : STYLES DU LOGO VIDÉO ANIMÉ
+ */
+.video-logo-container {
+    text-align: center;
+    padding-top: 15px; /* Espace au-dessus du logo */
+    padding-bottom: 15px; /* Espace sous le logo (entre le logo et la nav) */
+}
+
+#videoLogo {
+    width: 150px; /* Largeur du logo (ajustez si besoin) */
+    height: auto;
+    display: inline-block;
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+    max-width: 1000px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #147b4d; 
+}
+
+/* -------------------------------------------------------------------------------- */
+/* 3. STYLES SPÉCIFIQUES POUR CONTENU.HTML : ESPACEMENT MAXIMAL ISOLÉ */
+/* -------------------------------------------------------------------------------- */
+
+/* Ciblage des sections générales : Marge externe et padding interne très grands */
+main section {
+    margin-bottom: 70px; /* MARGE MAXIMALE entre les sections */
+    padding: 45px;      /* PADDING MAXIMAL pour plus d'air interne */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Ciblage des paragraphes : Grande marge et grand interligne */
+main p {
+    margin-bottom: 30px; /* ESPACEMENT MAXIMAL entre les paragraphes */
+    line-height: 2.0;   /* Interligne très grand */
+}
+
+/* Ciblage des titres H2 dans MAIN */
+main h2 {
+    margin-top: 1.8em; /* Plus d'espace au-dessus des titres de section */
+    margin-bottom: 1.2em;
+}
+
+/* Listes sur la page Contenu (Licences & Éco-conception) */
+main .licences-libre ul, main .eco-conception ul {
+    list-style: disc;
+    padding-left: 25px;
+}
+main .licences-libre li, main .eco-conception li {
+    margin-bottom: 30px; /* ESPACEMENT MAXIMAL entre les puces de liste */
+    line-height: 2.0; /* Interligne très grand */
+}
+
+/* Bloc Quote */
+blockquote {
+    padding: 25px 35px; /* Augmenté */
+    margin: 40px 0; /* Augmenté */
+    border-left: 5px solid #147b4d; 
+    background-color: #f0fff4; 
+    font-style: italic;
+    color: #444;
+}
+
+/* ====================================================================== */
+/* 4. STYLES DU TABLEAU (contenu.html) : AÉRATION ABSOLUE */
+/* ====================================================================== */
+.alternatives-table table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 100px; /* MARGE EXTRÊMEMENT GRANDE AU-DESSUS DU TABLEAU */
+    border: 3px solid #147b4d; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    background-color: white;
+    border-radius: 12px; 
+    overflow: hidden; 
+}
+
+/* ESPACEMENT DES CELLULES : PADDING ABSOLU */
+.alternatives-table th, 
+.alternatives-table td {
+    padding: 60px 70px; /* PADDING ABSOLU (60px HAUT/BAS, 70px GAUCHE/DROITE) */
+    font-size: 1.2em; 
+    line-height: 2.5; /* INTERLIGNE ABSOLUMENT MAXIMAL */
+    vertical-align: top; 
+    border: 1px solid #a0a0a0;
+}
+
+.alternatives-table th {
+    background-color: #147b4d; 
+    color: white;
+    font-weight: 700; 
+    text-transform: uppercase; 
+    text-align: center; 
+}
+
+.alternatives-table tr:nth-child(even) {
+    background-color: #ededed; 
+}
+
+.alternatives-table tr:hover td {
+    background-color: #d8ffeb; 
+    cursor: default;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* 5. STYLES DU QUIZ (jeux.html) : RÈGLES ORIGINALES CONSERVÉES (Non impacté) */
+/* -------------------------------------------------------------------------------- */
+
+.quiz-container {
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question-card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.question {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.answers div {
+    margin-bottom: 15px; 
+    cursor: pointer;
+    padding: 15px; 
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.answers div:hover {
+    background-color: #f0fff4; 
+    border-color: #147b4d; 
+}
+
+.answers div.selected {
+    background-color: #e6fff0; 
+    border: 2px solid #147b4d; 
+    font-weight: bold;
+}
+
+.answers input[type="radio"] {
+    display: none; 
+}
+
+#submit-btn {
+    display: block;
+    width: 100%;
+    padding: 18px; 
+    margin-top: 35px;
+    background-color: #147b4d; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s;
+    font-weight: bold;
+}
+
+#submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* 6. STYLES DE RECHERCHE (recherche.html) : RÈGLES ORIGINALES CONSERVÉES (Non impacté) */
+/* -------------------------------------------------------------------------------- */
+.recherche-form {
+    margin-bottom: 30px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1em;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #147b4d; 
+    outline: none;
+}
+
+.filtres {
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px dashed #e0e0e0;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.filtres-boutons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.filtres-boutons button {
+    padding: 10px 15px;
+    border: 1px solid #147b4d;
+    background-color: white;
+    color: #147b4d;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, transform 0.1s;
+    font-weight: 500;
+}
+
+.filtres-boutons button.active-toggle {
+    background-color: #147b4d;
+    color: white;
+}
+
+#ressourcesList {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+#ressourcesList li {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px; 
+    margin-bottom: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s;
+}
+
+#ressourcesList h3 {
+    margin-top: 0;
+    border-bottom: 2px dotted #147b4d; 
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* ----- 7. FOOTER (Pas de changement) ----- */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px; 
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-size: 0.9em;
+}
